@@ -1,0 +1,17 @@
+﻿@model IEnumerable<BeeManufacture.Domain.Entities.BHouse>
+@{
+    ViewBag.Title = "List";
+}
+
+<h2>List of BeeHouses</h2>
+@foreach (var p in Model)
+{
+    <h1>@p.BHouseId </h1>
+    <h1>@p.Name</h1>
+    <h1>@p.StartDate</h1>         
+    <h1>@p.BHType</h1>
+    <h1>@p.MB_Birth </h1>          
+    <h1>@p.MB_Kind</h1>
+       }            
+                    }
+
